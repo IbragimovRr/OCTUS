@@ -15,6 +15,9 @@ class ProfileViewController: UIViewController {
     
     //j3423
     
+    
+    
+    //22222
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
