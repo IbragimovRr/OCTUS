@@ -45,6 +45,7 @@ class SignUpEmailViewController: UIViewController {
         guard name.text!.count >= 2 else { nameView.color = UIColor.red; return }
         Registration().createEmailAndPassword(email: email.text ?? "", password: password.text ?? "") { credential, error in
             if error == nil {
+                Registration().saveUserInFirestore(nameDocument: self.email.text ?? "", nameUser: self.name.text!)
                 self.performSegue(withIdentifier: "sucess", sender: self)
             }else {
                 self.errorViewHidden.isHidden = false

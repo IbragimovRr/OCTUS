@@ -11,6 +11,10 @@ import Foundation
 class UD {
     //Save
     
+    func saveUserID(id:String) {
+        UserDefaults.standard.set(id, forKey: "userID")
+    }
+    
     func saveNameUser(name:String) {
         UserDefaults.standard.set(name, forKey: "name")
     }
@@ -32,6 +36,12 @@ class UD {
     
     
     //Get
+    
+    func getUserID() -> String {
+        return UserDefaults.standard.string(forKey: "userID") ?? ""
+    }
+    
+    
     func getNameUser() -> String {
         return UserDefaults.standard.string(forKey: "name") ?? ""
     }

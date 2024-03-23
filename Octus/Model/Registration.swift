@@ -15,31 +15,41 @@ import FirebaseFirestore
 
 class Registration: NSObject {
 
+    private let db = Firestore.firestore()
+    
+    func saveUserInFirestore(nameDocument:String,nameUser:String){
+        db.collection("users").document(nameDocument).setData([
+            "name": nameUser
+        ])
+        UD().saveUserID(id: nameDocument)
+        UD().saveNameUser(name: nameUser)
+    }
      
-    func google(controller:UIViewController,completion: @escaping (AuthCredential?,String?) -> ()) {
+    func google(controller:UIViewController,completion: @escaping (AuthCredential?) -> ()) {
         guard let clientID = FirebaseApp.app()?.options.clientID else { return }
         let config = GIDConfiguration(clientID: clientID)
         GIDSignIn.sharedInstance.configuration = config
 
         GIDSignIn.sharedInstance.signIn(withPresenting: controller) { result, error in
             guard error == nil else {
-                completion(nil,nil)
+                completion(nil)
                 return
             }
             
             guard let user = result?.user,
                   let idToken = user.idToken?.tokenString
             else {
-                completion(nil,nil)
+                completion(nil)
                 return
             }
             
-            let name = user.profile?.name
-            
+            guard let name = user.profile?.name else {return}
+            guard let email = user.profile?.email else {return}
+            self.saveUserInFirestore(nameDocument: email, nameUser: name)
             let credential = GoogleAuthProvider.credential(withIDToken: idToken,
                                                            accessToken: user.accessToken.tokenString)
             
-            completion(credential,name)
+            completion(credential)
         }
     }
     
@@ -98,15 +108,12 @@ extension RegistrViewController: ASAuthorizationControllerDelegate,ASAuthorizati
     
     func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
         guard let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential else { return }
-
-        let firstName = appleIDCredential.fullName?.givenName
         
-        if firstName != nil {
-            UD().saveNameUser(name: firstName!)
-            performSegue(withIdentifier: "succes", sender: self)
-        }else {
-            alertName()
-        }
+        
+        let nameDocument = appleIDCredential.user
+        let firstName = appleIDCredential.fullName?.givenName
+        Registration().saveUserInFirestore(nameDocument: nameDocument, nameUser: firstName ?? "")
+        performSegue(withIdentifier: "succes", sender: self)
         
         
     }
