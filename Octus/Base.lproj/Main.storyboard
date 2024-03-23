@@ -1809,9 +1809,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZZT-dj-gFh">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZZT-dj-gFh">
                                 <rect key="frame" x="0.0" y="59" width="393" height="793"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Ckq-s0-Qa7">
@@ -1828,6 +1827,12 @@
                         <viewLayoutGuide key="safeArea" id="rWI-Dr-5bO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ZZT-dj-gFh" firstAttribute="leading" secondItem="rWI-Dr-5bO" secondAttribute="leading" id="8Xc-50-zXC"/>
+                            <constraint firstItem="ZZT-dj-gFh" firstAttribute="top" secondItem="rWI-Dr-5bO" secondAttribute="top" id="JH4-cZ-AL2"/>
+                            <constraint firstItem="ZZT-dj-gFh" firstAttribute="trailing" secondItem="rWI-Dr-5bO" secondAttribute="trailing" id="jyR-A2-fx2"/>
+                            <constraint firstAttribute="bottom" secondItem="ZZT-dj-gFh" secondAttribute="bottom" id="p1x-xc-SE8"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="profile2" id="dNt-Rr-TJj"/>
                     <navigationItem key="navigationItem" id="LWG-qA-2o3"/>
