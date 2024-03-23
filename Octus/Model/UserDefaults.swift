@@ -10,6 +10,11 @@ import Foundation
 
 class UD {
     //Save
+    
+    func saveNameUser(name:String) {
+        UserDefaults.standard.set(name, forKey: "name")
+    }
+    
     func saveInfoUser(height:String,bodyType:String,landing:String){
         UserDefaults.standard.set(height, forKey: "height")
         UserDefaults.standard.set(bodyType, forKey: "bodyType")
@@ -27,6 +32,10 @@ class UD {
     
     
     //Get
+    func getNameUser() -> String {
+        return UserDefaults.standard.string(forKey: "name") ?? ""
+    }
+    
     func getCurrentUser() -> Bool {
         return UserDefaults.standard.bool(forKey: "currentUser")
     }

@@ -10,6 +10,7 @@ import Firebase
 import FirebaseAuth
 import GoogleSignIn
 import AuthenticationServices
+import FirebaseFirestore
 
 
 class Registration: NSObject {
@@ -17,29 +18,30 @@ class Registration: NSObject {
     
     
      
-    func google(controller:UIViewController,completion: @escaping (AuthCredential?) -> ()) {
+    func google(controller:UIViewController,completion: @escaping (AuthCredential?,String?) -> ()) {
         guard let clientID = FirebaseApp.app()?.options.clientID else { return }
         let config = GIDConfiguration(clientID: clientID)
         GIDSignIn.sharedInstance.configuration = config
 
         GIDSignIn.sharedInstance.signIn(withPresenting: controller) { result, error in
-          guard error == nil else {
-              completion(nil)
-            return
-          }
-
-          guard let user = result?.user,
-            let idToken = user.idToken?.tokenString
-          else {
-              completion(nil)
-            return
-          }
+            guard error == nil else {
+                completion(nil,nil)
+                return
+            }
             
-
-          let credential = GoogleAuthProvider.credential(withIDToken: idToken,
-                                                         accessToken: user.accessToken.tokenString)
+            guard let user = result?.user,
+                  let idToken = user.idToken?.tokenString
+            else {
+                completion(nil,nil)
+                return
+            }
             
-            completion(credential)
+            let name = user.profile?.name
+            
+            let credential = GoogleAuthProvider.credential(withIDToken: idToken,
+                                                           accessToken: user.accessToken.tokenString)
+            
+            completion(credential,name)
         }
     }
     
@@ -97,6 +99,43 @@ extension RegistrViewController: ASAuthorizationControllerDelegate,ASAuthorizati
     }
     
     func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
-        performSegue(withIdentifier: "succes", sender: self)
+        guard let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential else { return }
+
+        let firstName = appleIDCredential.fullName?.givenName
+        
+        if firstName != nil {
+            UD().saveNameUser(name: firstName!)
+            performSegue(withIdentifier: "succes", sender: self)
+        }else {
+            alertName()
+        }
+        
+        
+    }
+    
+    
+    func alertName() {
+        let alert = UIAlertController(title: "Впишите имя", message: nil, preferredStyle: .alert)
+
+        alert.addTextField{ tf in
+            tf.placeholder = "Имя"
+        }
+
+        alert.addAction(UIAlertAction(title: "Сохранить", style: .default) { _ in
+            let textField = alert.textFields![0]
+            guard textField.text != "" else {
+                self.error.isHidden = false
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                    self.error.isHidden = true
+                }
+                return
+            }
+            UD().saveNameUser(name: textField.text!)
+            self.performSegue(withIdentifier: "succes", sender: self)
+        })
+        
+        alert.addAction(UIAlertAction(title: "Отмена", style: .cancel))
+
+        present(alert, animated: true, completion: nil)
     }
 }

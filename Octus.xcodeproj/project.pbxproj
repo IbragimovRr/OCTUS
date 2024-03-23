@@ -78,7 +78,6 @@
 		44F1302A2BA9CB8100C35AC7 /* HeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F130292BA9CB8100C35AC7 /* HeightViewController.swift */; };
 		44F1302C2BADCE0100C35AC7 /* Ex View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F1302B2BADCE0100C35AC7 /* Ex View.swift */; };
 		44F1302E2BADCE3700C35AC7 /* ThirdInfoProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F1302D2BADCE3700C35AC7 /* ThirdInfoProfileViewController.swift */; };
-		44F130302BAF713B00C35AC7 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F1302F2BAF713B00C35AC7 /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,7 +122,6 @@
 		44F130292BA9CB8100C35AC7 /* HeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightViewController.swift; sourceTree = "<group>"; };
 		44F1302B2BADCE0100C35AC7 /* Ex View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex View.swift"; sourceTree = "<group>"; };
 		44F1302D2BADCE3700C35AC7 /* ThirdInfoProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdInfoProfileViewController.swift; sourceTree = "<group>"; };
-		44F1302F2BAF713B00C35AC7 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,7 +236,6 @@
 				448DC02D2B1E617F00509233 /* BagViewController.swift */,
 				448DBFE72B1A41CA00509233 /* HomeViewController.swift */,
 				448DBFED2B1B2C9D00509233 /* SearchViewController.swift */,
-				44F1302F2BAF713B00C35AC7 /* TestViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -422,7 +419,6 @@
 				4490CDB42B23A78500DF8221 /* SignUpEmailViewController.swift in Sources */,
 				448DBFE22B17D58F00509233 /* TovarImageCollectionViewCell.swift in Sources */,
 				448DBFEE2B1B2C9D00509233 /* SearchViewController.swift in Sources */,
-				44F130302BAF713B00C35AC7 /* TestViewController.swift in Sources */,
 				448DBFE82B1A41CA00509233 /* HomeViewController.swift in Sources */,
 				448DC0322B1E7FFE00509233 /* BagImage.swift in Sources */,
 				441878E62B0E59DE0096C463 /* GenderViewController.swift in Sources */,
@@ -505,7 +501,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -559,7 +555,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

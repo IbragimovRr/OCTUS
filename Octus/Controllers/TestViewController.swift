@@ -35,5 +35,5 @@ class TestViewController: UIViewController, ASAuthorizationControllerDelegate, A
 
     func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
         print("succes")
-        }
+    }
 }

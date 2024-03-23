@@ -22,10 +22,15 @@ class RegistrViewController: UIViewController {
     
     @IBAction func google(_ sender: UIButton) {
         
-        Registration().google(controller: self) { credential in
+        Registration().google(controller: self) { credential, name in
             if credential != nil {
                 Auth.auth().signIn(with: credential!)
-                self.performSegue(withIdentifier: "succes", sender: self)
+                if name == nil {
+                    self.alertName()
+                }else {
+                    UD().saveNameUser(name: name!)
+                    self.performSegue(withIdentifier: "succes", sender: self)
+                }
             }else {
                 self.error.isHidden = false
                 DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
