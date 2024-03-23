@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1eM-IJ-edX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b6B-Ln-0Fc">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -131,35 +131,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="975.38461538461536" y="-2.1327014218009479"/>
-        </scene>
-        <!--Test View Controller-->
-        <scene sceneID="INJ-i0-QZ1">
-            <objects>
-                <viewController id="1eM-IJ-edX" customClass="TestViewController" customModule="Octus" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZYf-LF-tKQ">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNX-fS-eBK">
-                                <rect key="frame" x="159" y="408.66666666666669" width="75" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                <connections>
-                                    <action selector="btn:" destination="1eM-IJ-edX" eventType="touchUpInside" id="6Zt-lZ-XRA"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Yhj-Fp-FYG"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="MNX-fS-eBK" firstAttribute="centerY" secondItem="ZYf-LF-tKQ" secondAttribute="centerY" id="5aN-ee-mjF"/>
-                            <constraint firstItem="MNX-fS-eBK" firstAttribute="centerX" secondItem="ZYf-LF-tKQ" secondAttribute="centerX" id="qYQ-WA-xxP"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="s8n-F3-zUb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="516" y="-1246"/>
         </scene>
         <!--Sign Up Email View Controller-->
         <scene sceneID="qiR-cN-nQj">
@@ -1237,7 +1208,7 @@
                                 <rect key="frame" x="30" y="59" width="333" height="49"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Товар успешно добавлен в корзину" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSy-ts-euh">
-                                        <rect key="frame" x="1" y="15" width="322" height="19"/>
+                                        <rect key="frame" x="1" y="15" width="322" height="18.999999999999993"/>
                                         <fontDescription key="fontDescription" name="RubikRoman-Regular" family="Rubik" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
