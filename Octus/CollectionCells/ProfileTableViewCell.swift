@@ -9,5 +9,6 @@ import UIKit
 
 class ProfileTableViewCell: UITableViewCell {
 
-
+    @IBOutlet weak var lbl: UILabel!
+    
 }
