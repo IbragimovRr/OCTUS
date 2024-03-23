@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4408EB082BAF98B4002A1EAE /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408EB072BAF98B4002A1EAE /* ProfileTableViewCell.swift */; };
 		441878C42B0E3CD90096C463 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441878C32B0E3CD90096C463 /* AppDelegate.swift */; };
 		441878C62B0E3CD90096C463 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441878C52B0E3CD90096C463 /* SceneDelegate.swift */; };
 		441878CB2B0E3CD90096C463 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 441878C92B0E3CD90096C463 /* Main.storyboard */; };
@@ -82,6 +83,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4408EB072BAF98B4002A1EAE /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		441878C02B0E3CD90096C463 /* Octus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Octus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		441878C32B0E3CD90096C463 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		441878C52B0E3CD90096C463 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 				448DBFE52B1A417300509233 /* TypeClothesCollectionViewCell.swift */,
 				448DBFEB2B1A4ED300509233 /* TovarHomeCollectionViewCell.swift */,
 				4490CDB72B262A3B00DF8221 /* BagTovarCollectionViewCell.swift */,
+				4408EB072BAF98B4002A1EAE /* ProfileTableViewCell.swift */,
 			);
 			path = CollectionCells;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 				44B2C8DD2B1541C400510707 /* Brand.swift in Sources */,
 				44F1302A2BA9CB8100C35AC7 /* HeightViewController.swift in Sources */,
 				44B2C8D92B15406300510707 /* TovarViewController.swift in Sources */,
+				4408EB082BAF98B4002A1EAE /* ProfileTableViewCell.swift in Sources */,
 				4490CDB82B262A3B00DF8221 /* BagTovarCollectionViewCell.swift in Sources */,
 				441878C42B0E3CD90096C463 /* AppDelegate.swift in Sources */,
 				448DC02E2B1E617F00509233 /* BagViewController.swift in Sources */,

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b6B-Ln-0Fc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b6B-Ln-0Fc">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -1183,7 +1183,7 @@
                                 <rect key="frame" x="30" y="59" width="333" height="49"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Товар успешно добавлен в корзину" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSy-ts-euh">
-                                        <rect key="frame" x="1" y="15" width="322" height="19"/>
+                                        <rect key="frame" x="1" y="15" width="322" height="18.999999999999993"/>
                                         <fontDescription key="fontDescription" name="RubikRoman-Regular" family="Rubik" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1813,6 +1813,30 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="793"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Ckq-s0-Qa7">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="63.333332061767578"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ckq-s0-Qa7" id="7wz-ps-ZxQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="63.333332061767578"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGj-KN-vXf">
+                                                    <rect key="frame" x="30" y="21" width="333" height="21.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fGj-KN-vXf" firstAttribute="leading" secondItem="7wz-ps-ZxQ" secondAttribute="leadingMargin" constant="10" id="UQz-Ed-2WP"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="fGj-KN-vXf" secondAttribute="trailing" constant="10" id="XFd-jM-SIx"/>
+                                                <constraint firstItem="fGj-KN-vXf" firstAttribute="top" secondItem="7wz-ps-ZxQ" secondAttribute="topMargin" constant="10" id="sZJ-6f-qXf"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="fGj-KN-vXf" secondAttribute="bottom" constant="10" id="wn8-gl-Sz1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rWI-Dr-5bO"/>
