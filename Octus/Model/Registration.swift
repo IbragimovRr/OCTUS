@@ -16,7 +16,9 @@ import FirebaseFirestore
 class Registration: NSObject {
     //214284182
     
-    
+    func asfa() {
+        print(55)
+    }
      
     func google(controller:UIViewController,completion: @escaping (AuthCredential?,String?) -> ()) {
         guard let clientID = FirebaseApp.app()?.options.clientID else { return }
