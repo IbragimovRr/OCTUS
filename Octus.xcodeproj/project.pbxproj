@@ -78,6 +78,7 @@
 		44F1302A2BA9CB8100C35AC7 /* HeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F130292BA9CB8100C35AC7 /* HeightViewController.swift */; };
 		44F1302C2BADCE0100C35AC7 /* Ex View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F1302B2BADCE0100C35AC7 /* Ex View.swift */; };
 		44F1302E2BADCE3700C35AC7 /* ThirdInfoProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F1302D2BADCE3700C35AC7 /* ThirdInfoProfileViewController.swift */; };
+		758F0A9B2BAF96C600629FA4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F0A9A2BAF96C600629FA4 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -122,6 +123,7 @@
 		44F130292BA9CB8100C35AC7 /* HeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightViewController.swift; sourceTree = "<group>"; };
 		44F1302B2BADCE0100C35AC7 /* Ex View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex View.swift"; sourceTree = "<group>"; };
 		44F1302D2BADCE3700C35AC7 /* ThirdInfoProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdInfoProfileViewController.swift; sourceTree = "<group>"; };
+		758F0A9A2BAF96C600629FA4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +238,7 @@
 				448DC02D2B1E617F00509233 /* BagViewController.swift */,
 				448DBFE72B1A41CA00509233 /* HomeViewController.swift */,
 				448DBFED2B1B2C9D00509233 /* SearchViewController.swift */,
+				758F0A9A2BAF96C600629FA4 /* ProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 				4490CDB82B262A3B00DF8221 /* BagTovarCollectionViewCell.swift in Sources */,
 				441878C42B0E3CD90096C463 /* AppDelegate.swift in Sources */,
 				448DC02E2B1E617F00509233 /* BagViewController.swift in Sources */,
+				758F0A9B2BAF96C600629FA4 /* ProfileViewController.swift in Sources */,
 				448DBFE42B17D5BB00509233 /* TovarColorCollectionViewCell.swift in Sources */,
 				44AE71172BA9B2CC002D38AE /* BodyTypeViewController.swift in Sources */,
 				441878E82B0E61670096C463 /* Modul.swift in Sources */,
