@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b6B-Ln-0Fc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b6B-Ln-0Fc">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -39,16 +39,16 @@
                                 <rect key="frame" x="36" y="368" width="321" height="65"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="jqf-HP-1rz">
-                                <rect key="frame" x="79.333333333333329" y="611" width="234.66666666666669" height="19"/>
+                                <rect key="frame" x="74.666666666666686" y="611" width="244" height="19"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Посетите" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baw-6p-dlS">
-                                        <rect key="frame" x="0.0" y="0.0" width="51.333333333333336" height="19"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="53" height="19"/>
                                         <fontDescription key="fontDescription" name="Circe-Regular" family="Circe" pointSize="12"/>
                                         <color key="textColor" red="0.59607843137254901" green="0.59607843137254901" blue="0.59607843137254901" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Mc-Ce-l6x">
-                                        <rect key="frame" x="54.333333333333329" y="0.0" width="54" height="19"/>
+                                        <rect key="frame" x="55.999999999999986" y="0.0" width="54" height="19"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button">
                                             <attributedString key="attributedTitle">
@@ -69,7 +69,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="перед использованием" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfU-eI-FZ2">
-                                        <rect key="frame" x="111.33333333333334" y="0.0" width="123.33333333333334" height="19"/>
+                                        <rect key="frame" x="113" y="0.0" width="131" height="19"/>
                                         <fontDescription key="fontDescription" name="Circe-Regular" family="Circe" pointSize="12"/>
                                         <color key="textColor" red="0.59607843140000005" green="0.59607843140000005" blue="0.59607843140000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1183,7 +1183,7 @@
                                 <rect key="frame" x="30" y="59" width="333" height="49"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Товар успешно добавлен в корзину" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSy-ts-euh">
-                                        <rect key="frame" x="1" y="15" width="322" height="18.999999999999993"/>
+                                        <rect key="frame" x="1" y="15" width="322" height="19"/>
                                         <fontDescription key="fontDescription" name="RubikRoman-Regular" family="Rubik" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1815,25 +1815,11 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Ckq-s0-Qa7">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="63.333332061767578"/>
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ckq-s0-Qa7" id="7wz-ps-ZxQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="63.333332061767578"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGj-KN-vXf">
-                                                    <rect key="frame" x="30" y="21" width="333" height="21.333333333333329"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="fGj-KN-vXf" firstAttribute="leading" secondItem="7wz-ps-ZxQ" secondAttribute="leadingMargin" constant="10" id="UQz-Ed-2WP"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="fGj-KN-vXf" secondAttribute="trailing" constant="10" id="XFd-jM-SIx"/>
-                                                <constraint firstItem="fGj-KN-vXf" firstAttribute="top" secondItem="7wz-ps-ZxQ" secondAttribute="topMargin" constant="10" id="sZJ-6f-qXf"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="fGj-KN-vXf" secondAttribute="bottom" constant="10" id="wn8-gl-Sz1"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
