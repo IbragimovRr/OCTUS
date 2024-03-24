@@ -1197,7 +1197,7 @@
                                 <rect key="frame" x="30" y="59" width="333" height="49"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Товар успешно добавлен в корзину" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSy-ts-euh">
-                                        <rect key="frame" x="1" y="15" width="322" height="19"/>
+                                        <rect key="frame" x="1" y="15" width="322" height="18.999999999999993"/>
                                         <fontDescription key="fontDescription" name="RubikRoman-Regular" family="Rubik" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1420,12 +1420,15 @@
                                                     </subviews>
                                                 </stackView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eX3-wa-TDY">
-                                                    <rect key="frame" x="131" y="5" width="22" height="22"/>
+                                                    <rect key="frame" x="107" y="5" width="46" height="36"/>
                                                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" image="smallStaticHeart">
                                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <buttonConfiguration key="configuration" style="plain" image="smallStaticHeart">
+                                                        <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </buttonConfiguration>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -1816,20 +1819,99 @@
         <!--Suggestions-->
         <scene sceneID="bOa-ct-unE">
             <objects>
-                <viewController id="6dF-Cs-pnS" sceneMemberID="viewController">
+                <viewController id="6dF-Cs-pnS" customClass="SuggestationsViewController" customModule="Octus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kdT-pv-vvA">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UAG-9W-GgZ">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ppM-AK-Ndh">
+                                    <size key="itemSize" width="392" height="710"/>
+                                    <size key="estimatedItemSize" width="392" height="710"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="firstSug" id="gcs-aV-BEU" customClass="SuggestationsCollectionViewCell" customModule="Octus" customModuleProvider="target">
+                                        <rect key="frame" x="0.66666666666666663" y="0.0" width="392" height="710"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Pdp-kg-GBl">
+                                            <rect key="frame" x="0.0" y="0.0" width="392" height="710"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ewN-tQ-i1O">
+                                                    <rect key="frame" x="0.0" y="0.0" width="392" height="710"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tIT-oY-6Qp">
+                                                        <size key="itemSize" width="392" height="710"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="secondSug" id="qEg-MM-zc6" customClass="SuggestationsCollectionViewCell" customModule="Octus" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="392" height="710"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WWw-Nb-tFQ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="392" height="710"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageNew" translatesAutoresizingMaskIntoConstraints="NO" id="UMA-8J-Sb0">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="392" height="710"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="trailing" secondItem="UMA-8J-Sb0" secondAttribute="trailing" id="30A-VX-L8b"/>
+                                                                    <constraint firstItem="UMA-8J-Sb0" firstAttribute="top" secondItem="WWw-Nb-tFQ" secondAttribute="top" id="4VW-2j-S93"/>
+                                                                    <constraint firstItem="UMA-8J-Sb0" firstAttribute="leading" secondItem="WWw-Nb-tFQ" secondAttribute="leading" id="X6c-sl-jvh"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="UMA-8J-Sb0" secondAttribute="bottom" id="erF-jb-xUq"/>
+                                                                </constraints>
+                                                            </collectionViewCellContentView>
+                                                            <size key="customSize" width="392" height="710"/>
+                                                            <connections>
+                                                                <outlet property="im" destination="UMA-8J-Sb0" id="yUn-hh-hMU"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ewN-tQ-i1O" firstAttribute="leading" secondItem="Pdp-kg-GBl" secondAttribute="leading" id="HMu-jG-t2T"/>
+                                                <constraint firstAttribute="trailing" secondItem="ewN-tQ-i1O" secondAttribute="trailing" id="h45-Fk-ntT"/>
+                                                <constraint firstItem="ewN-tQ-i1O" firstAttribute="top" secondItem="Pdp-kg-GBl" secondAttribute="top" id="hsU-9b-AdD"/>
+                                                <constraint firstAttribute="bottom" secondItem="ewN-tQ-i1O" secondAttribute="bottom" id="ysA-2b-98o"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="392" height="710"/>
+                                        <connections>
+                                            <outlet property="secondCollectionView" destination="ewN-tQ-i1O" id="kcw-Du-iRZ"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="MxJ-0J-hNZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="UAG-9W-GgZ" firstAttribute="leading" secondItem="MxJ-0J-hNZ" secondAttribute="leading" id="I1D-eW-xU3"/>
+                            <constraint firstItem="UAG-9W-GgZ" firstAttribute="top" secondItem="kdT-pv-vvA" secondAttribute="top" id="L7z-Y6-n2T"/>
+                            <constraint firstItem="UAG-9W-GgZ" firstAttribute="trailing" secondItem="MxJ-0J-hNZ" secondAttribute="trailing" id="gXQ-XK-Sh7"/>
+                            <constraint firstItem="UAG-9W-GgZ" firstAttribute="bottom" secondItem="MxJ-0J-hNZ" secondAttribute="bottom" id="qPN-oL-NH5"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Suggestions" image="suggestions" id="nbE-xk-L6Y"/>
                     <navigationItem key="navigationItem" id="tl3-co-5eE"/>
+                    <connections>
+                        <outlet property="collectionview" destination="UAG-9W-GgZ" id="1A5-Aq-KH0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="psi-g3-Dnn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6527" y="861"/>
+            <point key="canvasLocation" x="6525.9541984732823" y="860.56338028169023"/>
         </scene>
         <!--Profile-->
         <scene sceneID="GrP-ub-aT0">
@@ -1845,14 +1927,14 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Ckq-s0-Qa7" customClass="ProfileTableViewCell" customModule="Octus" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="63.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="50" width="393" height="63.333332061767578"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ckq-s0-Qa7" id="7wz-ps-ZxQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="63.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="63.333332061767578"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1u-9v-0JV">
-                                                    <rect key="frame" x="30" y="21" width="333" height="21.666666666666671"/>
+                                                    <rect key="frame" x="30" y="21" width="333" height="21.333333333333329"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -3128,9 +3210,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Dkk-tp-mIY"/>
+        <segue reference="yL5-0g-b3p"/>
         <segue reference="GbB-DZ-qmU"/>
-        <segue reference="5Mk-0E-iMI"/>
+        <segue reference="p3d-hm-nlW"/>
         <segue reference="tBH-A5-aCn"/>
     </inferredMetricsTieBreakers>
     <resources>

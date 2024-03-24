@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4408EB082BAF98B4002A1EAE /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408EB072BAF98B4002A1EAE /* ProfileTableViewCell.swift */; };
+		4408EB0A2BB46C83002A1EAE /* SuggestationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408EB092BB46C83002A1EAE /* SuggestationsViewController.swift */; };
+		4408EB0C2BB46CEE002A1EAE /* SuggestationsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408EB0B2BB46CEE002A1EAE /* SuggestationsCollectionViewCell.swift */; };
 		441878C42B0E3CD90096C463 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441878C32B0E3CD90096C463 /* AppDelegate.swift */; };
 		441878C62B0E3CD90096C463 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441878C52B0E3CD90096C463 /* SceneDelegate.swift */; };
 		441878CB2B0E3CD90096C463 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 441878C92B0E3CD90096C463 /* Main.storyboard */; };
@@ -84,6 +86,8 @@
 
 /* Begin PBXFileReference section */
 		4408EB072BAF98B4002A1EAE /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		4408EB092BB46C83002A1EAE /* SuggestationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestationsViewController.swift; sourceTree = "<group>"; };
+		4408EB0B2BB46CEE002A1EAE /* SuggestationsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestationsCollectionViewCell.swift; sourceTree = "<group>"; };
 		441878C02B0E3CD90096C463 /* Octus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Octus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		441878C32B0E3CD90096C463 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		441878C52B0E3CD90096C463 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -239,6 +243,7 @@
 				44B2C8D82B15406300510707 /* TovarViewController.swift */,
 				448DC02D2B1E617F00509233 /* BagViewController.swift */,
 				448DBFE72B1A41CA00509233 /* HomeViewController.swift */,
+				4408EB092BB46C83002A1EAE /* SuggestationsViewController.swift */,
 				448DBFED2B1B2C9D00509233 /* SearchViewController.swift */,
 				758F0A9A2BAF96C600629FA4 /* ProfileViewController.swift */,
 			);
@@ -281,6 +286,7 @@
 				448DBFEB2B1A4ED300509233 /* TovarHomeCollectionViewCell.swift */,
 				4490CDB72B262A3B00DF8221 /* BagTovarCollectionViewCell.swift */,
 				4408EB072BAF98B4002A1EAE /* ProfileTableViewCell.swift */,
+				4408EB0B2BB46CEE002A1EAE /* SuggestationsCollectionViewCell.swift */,
 			);
 			path = CollectionCells;
 			sourceTree = "<group>";
@@ -428,12 +434,14 @@
 				448DBFE22B17D58F00509233 /* TovarImageCollectionViewCell.swift in Sources */,
 				448DBFEE2B1B2C9D00509233 /* SearchViewController.swift in Sources */,
 				448DBFE82B1A41CA00509233 /* HomeViewController.swift in Sources */,
+				4408EB0A2BB46C83002A1EAE /* SuggestationsViewController.swift in Sources */,
 				448DC0322B1E7FFE00509233 /* BagImage.swift in Sources */,
 				441878E62B0E59DE0096C463 /* GenderViewController.swift in Sources */,
 				448DBFDF2B16901300509233 /* Favorite.swift in Sources */,
 				441878D92B0E43710096C463 /* LogoViewController.swift in Sources */,
 				4490CDB62B2527AD00DF8221 /* SignInEmailAndPasswordViewController.swift in Sources */,
 				44B2C8D52B11374500510707 /* InformationViewController.swift in Sources */,
+				4408EB0C2BB46CEE002A1EAE /* SuggestationsCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
