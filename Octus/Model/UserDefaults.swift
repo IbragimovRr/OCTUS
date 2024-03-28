@@ -42,8 +42,8 @@ class UD {
     }
     
     
-    func getNameUser() -> String {
-        return UserDefaults.standard.string(forKey: "name") ?? ""
+    func getNameUser() -> String? {
+        return UserDefaults.standard.string(forKey: "name")
     }
     
     func getCurrentUser() -> Bool {
