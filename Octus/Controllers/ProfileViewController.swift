@@ -45,7 +45,8 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = UIView(frame: CGRect(x: 0.0, y: 0.0, width: tableView.frame.size.width, height: 63.0))
         view.backgroundColor = .white
-        let lbl = UILabel(frame: CGRect(x: 10.0, y: 0.0, width: view.frame.size.width, height: 63.0))
+        let lbl = UILabel(frame: CGRect(x: 30.0, y: 0.0, width: view.frame.size.width, height: 63.0))
+        lbl.font = UIFont(name: "circe", size: 22)
         lbl.text = arrayCells[section].nameSection
         lbl.textColor = .black
         view.addSubview(lbl)
