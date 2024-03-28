@@ -17,6 +17,18 @@ class Registration: NSObject {
 
     private let db = Firestore.firestore()
     
+    func getNameUserInFirestore(nameDocument:String = UD().getUserID()) {
+        print(nameDocument)
+        db.collection("users").document(nameDocument).getDocument { qs, err in
+            if err == nil {
+                let data = qs!.data()
+                let name = data?["name"] as! String
+                print(name)
+                UD().saveNameUser(name: name)
+            }
+        }
+    }
+    
     func saveUserInFirestore(nameDocument:String,nameUser:String){
         db.collection("users").document(nameDocument).setData([
             "name": nameUser
@@ -112,7 +124,12 @@ extension RegistrViewController: ASAuthorizationControllerDelegate,ASAuthorizati
         
         let nameDocument = appleIDCredential.user
         let firstName = appleIDCredential.fullName?.givenName
-        Registration().saveUserInFirestore(nameDocument: nameDocument, nameUser: firstName ?? "")
+        
+        if firstName == nil {
+            Registration().getNameUserInFirestore(nameDocument: nameDocument)
+        }else {
+            Registration().saveUserInFirestore(nameDocument: nameDocument, nameUser: firstName!)
+        }
         performSegue(withIdentifier: "succes", sender: self)
         
         

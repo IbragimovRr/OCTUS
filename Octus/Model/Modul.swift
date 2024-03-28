@@ -82,3 +82,8 @@ extension String {
       self = self.capitalizingFirstLetter()
     }
 }
+
+struct ProfileSection {
+    var cell: [String]
+    var nameSection: String
+}

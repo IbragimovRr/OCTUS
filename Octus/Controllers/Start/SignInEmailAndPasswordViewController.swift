@@ -42,6 +42,8 @@ class SignInEmailAndPasswordViewController: UIViewController {
     @IBAction func signIn(_ sender: UIButton) {
         Registration().signInEmailAndPassword(email: email.text ?? "", password: password.text ?? "") { credential, error in
             if error == nil {
+                UD().saveUserID(id: self.email.text ?? "")
+                Registration().getNameUserInFirestore(nameDocument: self.email.text ?? "")
                 self.performSegue(withIdentifier: "succes", sender: self)
             }else {
                 self.errorView.isHidden = false
